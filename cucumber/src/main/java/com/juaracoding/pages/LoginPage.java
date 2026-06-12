@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
 
@@ -40,6 +42,7 @@ public class LoginPage {
     }
 
     public void loginUsernamePassword(String username, String password) {
+        new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(this.username));
         this.username.clear();
         this.username.sendKeys(username);
         this.password.clear();
@@ -47,18 +50,20 @@ public class LoginPage {
     }
 
     public void setLoginBtn() {
-        loginBtn.click();
+        com.juaracoding.utils.Utils.delay(1);
+        WebElement btn = new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(loginBtn));
+        ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("arguments[0].click();", btn);
     }
 
     public String getTxtInvalid() {
-        return txtInvalid.getText();
+        return new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(txtInvalid)).getText();
     }
 
     public String getTxtLogin() {
-        return txtLogin.getText();
+        return new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(txtLogin)).getText();
     }
 
     public String getTxtRequired() {
-        return txtRequired.getText();
+        return new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(txtRequired)).getText();
     }
 }

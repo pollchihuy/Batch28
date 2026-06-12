@@ -16,35 +16,38 @@ public class Hooks {
 
     static WebDriver driver;
     static ExtentTest extentTest;
-    static ExtentReports reports = new ExtentReports("target/extent-report.html");
+    static ExtentReports reports;
+
+    static {
+        String timestamp = Utils.getReportTimestamp();
+        reports = new ExtentReports("reports/" + timestamp + "/" + timestamp + "-extent-report.html");
+    }
 
     @Before
-    public void setup(){
+    public void setup(Scenario scenario) {
         DriverSingleton.getInstance(Constants.CHROME);
         driver = DriverSingleton.getDriver();
-        ScenarioTest[] tests = ScenarioTest.values();
-        extentTest = reports.startTest(tests[Utils.testCount].getScenarioTestName());
-        Utils.testCount++;
+        extentTest = reports.startTest(scenario.getName());
     }
 
     @AfterStep
     public void getResultTest(Scenario scenario) throws IOException {
-        if(scenario.isFailed()){
-            String screenshotPath = Utils.getScreenshot(driver,scenario.getName()
-                    .replace(" ","_"));
-            extentTest.log(LogStatus.FAIL,scenario.getName()+"\n"
-                +extentTest.addScreenCapture(screenshotPath));
+        if (scenario.isFailed()) {
+            String screenshotPath = Utils.getScreenshot(driver, scenario.getName()
+                    .replace(" ", "_"));
+            extentTest.log(LogStatus.FAIL, scenario.getName() + "\n"
+                    + extentTest.addScreenCapture(screenshotPath));
         }
     }
 
     @After
-    public void endScenarioTest(){
+    public void endScenarioTest() {
         reports.endTest(extentTest);
         reports.flush();
     }
 
     @AfterAll
-    public static void finish(){
+    public static void finish() {
         Utils.delay(3);
         DriverSingleton.closeObjectInstance();
     }

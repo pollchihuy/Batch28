@@ -22,12 +22,22 @@ public class Utils {
 
     public static int testCount = 0;
 
+    private static String reportTimestamp;
+
+    public static synchronized String getReportTimestamp() {
+        if (reportTimestamp == null) {
+            reportTimestamp = new SimpleDateFormat("yyMMddHHmm").format(new Date());
+        }
+        return reportTimestamp;
+    }
+
     public static String getScreenshot(WebDriver driver,String screenshotName) throws IOException {
         String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
-        String pathDestination = System.getProperty("user.dir")+"/FailedTestScreenshot/"
-                +screenshotName+"_"+dateName+".png";
+        String timestamp = getReportTimestamp();
+        String pathDestination = System.getProperty("user.dir") + "/reports/" + timestamp + "/FailedTestScreenshot/"
+                + screenshotName + "_" + dateName + ".png";
         File destination = new File(pathDestination);
         FileUtils.copyFile(source,destination);
         return pathDestination;

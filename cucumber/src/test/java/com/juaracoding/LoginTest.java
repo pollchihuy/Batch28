@@ -29,7 +29,7 @@ public class LoginTest {
     @Given("I am on the login page")
     public void i_am_on_the_login_page() {
         driver.get(Constants.URL);
-        Utils.delay(2);
+        Utils.delay(4);
         extentTest.log(LogStatus.PASS, "I am on the login page");
     }
 
@@ -54,15 +54,20 @@ public class LoginTest {
     // TCC.HR.002
     @Given("I am logout")
     public void i_am_logout() {
-        dashboardPage.setLogoutBtn();
-        Utils.delay(2);
+        if (driver.getCurrentUrl().contains("/dashboard")) {
+            dashboardPage.setLogoutBtn();
+            Utils.delay(2);
+        } else {
+            driver.get(Constants.URL);
+            Utils.delay(2);
+        }
         extentTest.log(LogStatus.PASS, "I am logout");
     }
 
-    @When("I enter a invalid username and password")
-    public void i_enter_a_invalid_username_and_password() {
-        loginPage.loginUsernamePassword("Adminn", "admin1234");
-        extentTest.log(LogStatus.PASS, "I enter a invalid username and password");
+    @When("I enter a invalid username {string} and password {string}")
+    public void i_enter_a_invalid_username_and_password(String username, String password) {
+        loginPage.loginUsernamePassword(username, password);
+        extentTest.log(LogStatus.PASS, "I enter a invalid username " + username + " and password " + password);
     }
 
     @Then("I see message invalid credentials")
@@ -77,11 +82,10 @@ public class LoginTest {
         extentTest.log(LogStatus.PASS, "I was on the login page");
     }
 
-    // TCC.HR.003
-    @When("I enter a empty username and empty password")
-    public void i_enter_a_empty_username_and_empty_password() {
-        loginPage.loginUsernamePassword("", "");
-        extentTest.log(LogStatus.PASS, "I enter a empty username and empty password");
+    @When("I enter a username {string} or password {string}")
+    public void i_enter_a_username_or_password(String username, String password) {
+        loginPage.loginUsernamePassword(username, password);
+        extentTest.log(LogStatus.PASS, "I enter a username " + username + " or password " + password);
     }
 
     @Then("I see message required under username and password")
