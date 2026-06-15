@@ -4,6 +4,7 @@ import com.juaracoding.pages.DashboardPage;
 import com.juaracoding.pages.LoginPage;
 import com.juaracoding.utils.Constants;
 import com.juaracoding.utils.Utils;
+import com.juaracoding.utils.ExcelReader;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import io.cucumber.java.en.And;
@@ -64,22 +65,30 @@ public class LoginTest {
         extentTest.log(LogStatus.PASS, "I am logout");
     }
 
-    @When("I enter a invalid username {string} and password {string}")
-    public void i_enter_a_invalid_username_and_password(String username, String password) {
-        loginPage.loginUsernamePassword(username, password);
-        extentTest.log(LogStatus.PASS, "I enter a invalid username " + username + " and password " + password);
-    }
+    @When("I login with invalid credentials from excel file {string} sheet {string}")
+    public void i_login_with_invalid_credentials_from_excel_file_sheet(String excelPath, String sheetName) {
+        ExcelReader excelReader = new ExcelReader(excelPath, sheetName);
+        String[][] loginData = excelReader.getDataWithoutHeader();
+        for (int i = 0; i < loginData.length; i++) {
+            String username = loginData[i][0];
+            String password = loginData[i][1];
 
-    @Then("I see message invalid credentials")
-    public void i_see_message_invalid_credentials() {
-        Assert.assertEquals(loginPage.getTxtInvalid(), "Invalid credentials");
-        extentTest.log(LogStatus.PASS, "I see message invalid credentials");
-    }
+            // 1. Enter invalid username and password
+            loginPage.loginUsernamePassword(username, password);
+            extentTest.log(LogStatus.PASS, "I enter a invalid username " + username + " and password " + password);
 
-    @And("I was on the login page")
-    public void i_was_on_the_login_page() {
-        Assert.assertEquals(loginPage.getTxtLogin(), "Login");
-        extentTest.log(LogStatus.PASS, "I was on the login page");
+            // 2. Click the login button
+            loginPage.setLoginBtn();
+            extentTest.log(LogStatus.PASS, "I click the login button");
+
+            // 3. Assert invalid credentials message
+            Assert.assertEquals(loginPage.getTxtInvalid(), "Invalid credentials");
+            extentTest.log(LogStatus.PASS, "I see message invalid credentials");
+
+            // 4. Assert we are still on the login page
+            Assert.assertEquals(loginPage.getTxtLogin(), "Login");
+            extentTest.log(LogStatus.PASS, "I was on the login page");
+        }
     }
 
     @When("I enter a username {string} or password {string}")
@@ -92,5 +101,11 @@ public class LoginTest {
     public void i_see_message_required_under_username_and_password() {
         Assert.assertEquals(loginPage.getTxtRequired(), "Required");
         extentTest.log(LogStatus.PASS, "I see message required under username and password");
+    }
+
+    @And("I was on the login page")
+    public void i_was_on_the_login_page() {
+        Assert.assertEquals(loginPage.getTxtLogin(), "Login");
+        extentTest.log(LogStatus.PASS, "I was on the login page");
     }
 }
