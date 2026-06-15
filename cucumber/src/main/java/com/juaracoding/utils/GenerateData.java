@@ -24,7 +24,7 @@ public class GenerateData {
          */
         String namaLengkap = "";
         while (true) {
-            int numWords = random.nextInt(3);
+            int numWords = random.nextInt(2, 4); // 2 s.d 3 kata, agar selalu ada spasi
             StringBuilder sb = new StringBuilder();
             for (int w = 0; w < numWords; w++) {
                 if (w > 0) {
