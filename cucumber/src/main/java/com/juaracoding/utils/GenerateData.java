@@ -100,6 +100,7 @@ public class GenerateData {
 
     public String dataEmail() {
         /**
+         * RFC 5322
          * Format data Email ?
          * 1.numerik min 1 maks 3 digit
          * 2. (.)
@@ -121,7 +122,6 @@ public class GenerateData {
         email = email + strProvider[random.nextInt(strProvider.length)]; // 77.panji@gmail
         email = email + "."; // 77.panji@gmail.
         email = email + strDomain[random.nextInt(strDomain.length)]; // 77.panji@gmail.com        
-
         return email;
     }
 }
