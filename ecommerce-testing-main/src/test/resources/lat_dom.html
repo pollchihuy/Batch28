@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DOM App Counter & Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
+
+    <!-- COUNTER -->
+    <h1 class="text-2xl font-bold text-center mb-4">Counter</h1>
+
+    <div id="counterBox" class="text-center text-5xl font-bold py-6 rounded-xl bg-gray-300 text-white transition-all duration-300">
+      0
+    </div>
+
+    <div class="flex justify-center gap-4 mt-4">
+      <button id="btnMinus" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg">-</button>
+      <button id="btnPlus" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">+</button>
+    </div>
+
+    <!-- FORM IDENTITAS -->
+    <h2 class="text-xl font-semibold mt-8 mb-3">Form Identitas</h2>
+
+    <form id="formIdentitas" class="space-y-3">
+      <input id="nama" type="text" placeholder="Nama"
+        class="w-full border p-2 rounded-lg focus:outline-none focus:ring focus:ring-blue-300" required>
+
+      <input id="umur" type="number" placeholder="Umur"
+        class="w-full border p-2 rounded-lg focus:outline-none focus:ring focus:ring-blue-300" required>
+
+      <input id="alamat" type="text" placeholder="Alamat"
+        class="w-full border p-2 rounded-lg focus:outline-none focus:ring focus:ring-blue-300" required>
+
+      <button type="submit"
+        class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg">
+        Submit
+      </button>
+    </form>
+
+    <!-- HASIL SUBMIT -->
+    <div id="hasil" class="mt-6"></div>
+
+  </div>
+
+  <script>
+    // ===== COUNTER LOGIC =====
+    let count = 0;
+    const counterBox = document.getElementById("counterBox");
+
+    function updateCounter() {
+      counterBox.textContent = count;
+
+      // reset warna
+      counterBox.className = "text-center text-5xl font-bold py-6 rounded-xl text-white transition-all duration-300";
+
+      if (count > 0) {
+        counterBox.classList.add("bg-green-500");
+      } else if (count < 0) {
+        counterBox.classList.add("bg-red-500");
+      } else {
+        counterBox.classList.add("bg-gray-400");
+      }
+    }
+
+    document.getElementById("btnPlus").addEventListener("click", () => {
+      count++;
+      updateCounter();
+    });
+
+    document.getElementById("btnMinus").addEventListener("click", () => {
+      count--;
+      updateCounter();
+    });
+
+    // ===== FORM SUBMIT LOGIC =====
+    const form = document.getElementById("formIdentitas");
+    const hasil = document.getElementById("hasil");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const nama = document.getElementById("nama").value;
+      const umur = document.getElementById("umur").value;
+      const alamat = document.getElementById("alamat").value;
+
+      hasil.innerHTML = `
+        <div class="bg-blue-100 border border-blue-300 p-4 rounded-lg">
+          <p><strong>Nama:</strong> ${nama}</p>
+          <p><strong>Umur:</strong> ${umur} tahun</p>
+          <p><strong>Alamat:</strong> ${alamat}</p>
+        </div>
+      `;
+
+      form.reset();
+    });
+
+    // init
+    updateCounter();
+  </script>
+
+</body>
+</html>

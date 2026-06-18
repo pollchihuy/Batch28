@@ -31,3 +31,5 @@ Desktop.ini
 .env.test.local
 .env.production.local
 *.log
+**/log/
+**/logs/
