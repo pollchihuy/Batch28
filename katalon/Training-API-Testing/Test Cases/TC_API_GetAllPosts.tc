@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>get aLL Post</description>
+   <name>TC_API_GetAllPosts</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cc7575f9-2e07-47fd-a630-db9deff43650</testCaseGuid>
+</TestCaseEntity>

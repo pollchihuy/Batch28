@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>buat testing positive login</description>
+   <name>test_login_positive</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>94f4c0d5-ee1a-4858-81e9-4108e7640f74</testCaseGuid>
+</TestCaseEntity>

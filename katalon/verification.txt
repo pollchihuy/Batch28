@@ -1,0 +1,17 @@
+import static org.assertj.core.api.Assertions.*
+
+import com.kms.katalon.core.testobject.RequestObject
+import com.kms.katalon.core.testobject.ResponseObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webservice.verification.WSResponseManager
+import com.kms.katalon.core.util.KeywordUtil          // <-- baris ini yang tadi hilang
+
+import groovy.json.JsonSlurper
+import internal.GlobalVariable as GlobalVariable
+
+RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+WS.verifyResponseStatusCode(response, 200)
+assert response.getResponseBodyContent() != null
+KeywordUtil.markPassed("Verifikasi berhasil: status 200 OK dan body tidak kosong")

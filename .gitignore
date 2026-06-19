@@ -23,6 +23,7 @@ target/
 Thumbs.db
 Desktop.ini
 .DS_Store
+~$*
 
 # Environment and sensitive data
 .env
