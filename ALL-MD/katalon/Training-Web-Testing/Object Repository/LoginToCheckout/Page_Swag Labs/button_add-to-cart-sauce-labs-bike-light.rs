@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_add-to-cart-sauce-labs-bike-light</name>
+   <tag></tag>
+   <elementGuidId>afe83776-22f5-4f01-8bec-8aa06b5cba7e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>[data-test=&quot;add-to-cart-sauce-labs-bike-light&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@data-test = 'add-to-cart-sauce-labs-bike-light']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>9945a212-ba5b-42ab-868f-83965f33541f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn_primary btn_small btn_inventory </value>
+      <webElementGuid>00355006-2e36-4d70-a196-38731c70018c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-test</name>
+      <type>Main</type>
+      <value>add-to-cart-sauce-labs-bike-light</value>
+      <webElementGuid>0353d8a7-58df-40aa-aad2-0bc27227bf36</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>add-to-cart-sauce-labs-bike-light</value>
+      <webElementGuid>7e171a8d-5e2d-49df-adf2-ed5d1e7b98e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>add-to-cart-sauce-labs-bike-light</value>
+      <webElementGuid>0fcda04f-ff90-4980-ae35-0a2ac9f7c5fc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Add to cart</value>
+      <webElementGuid>3ebc3fd3-dc76-41f9-a722-b9336cf6e3c7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-eb0b4fc0d8204bdb06d563582a5434cd</value>
+      <webElementGuid>64b2647c-8e13-43f8-ac18-6a8b1a3cbb9c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@data-test = 'add-to-cart-sauce-labs-bike-light']</value>
+      <webElementGuid>692f2a4a-13c4-40e1-ad8d-462c58cd9cb7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@data-test = 'add-to-cart-sauce-labs-bike-light']</value>
+      <webElementGuid>c977d2ae-21a8-4269-8dba-dbe407cdcfb5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@id = 'add-to-cart-sauce-labs-bike-light' and @name = 'add-to-cart-sauce-labs-bike-light' and (text() = 'Add to cart' or . = 'Add to cart')]</value>
+      <webElementGuid>a045d32e-1f4a-46ab-8237-0cedb96cc667</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

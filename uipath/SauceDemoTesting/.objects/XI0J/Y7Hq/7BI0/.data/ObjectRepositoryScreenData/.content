@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="RqIAGI3Qskekh18zGRqXEg" Reference="ZVZr7Wj9_k6x0GW08-lgWQ/7BI0HuCIMUC68XRY2LpK3w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="1902, -18, 3876, 2196" BrowserType="Chrome" ContentHash="eTjkqqPRNE-uCRweAhWsmQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFrSURBVDhPddPNK0RRGMfxGUozOxaShY2kJkVio5mp+QvkJXuWhLUNO1tmVlKsZDcLGRt/AiILeZsrEVJEsfGSl+/vOqee7oynPt1z73me55577r0xH9mgUI91fOIn4gujLrV6kDCMN1cQdYOUS62MTLBYQ8KqKYgqZsr5OpdeGSS04MwUfOAS5wgwg1a0GY2Zi0LcNxiBinyDXbSjCd3u/B53xh4G/fJX4ItlPuxMMO7Hf3uzrwQt7dRcfEFOxelgIc54ycxF7ajBGOwdTpBGCj3YwDF0E5unVzurBpvmorzjAU9Yg/ahATk8wudpH3rVQEu2DbxvTIQbQTCeNHNSypbzSU3oI7ET3i3CjycT5BOMS2ZOpnznIWzjwDhEEX3owgD0Gn2xxp1hAwUnSehf8PTMy3jFszvqkXyDLZafcOWVQUIzjkxB1LRLrR4kDEJvo1rxNTpcavUgYQ7axCtDhfoexvmxav8yY7Ff4RnjWld/dTIAAAAASUVORK5CYII=" Reference="ZVZr7Wj9_k6x0GW08-lgWQ/7BI0HuCIMUC68XRY2LpK3w" Selector="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" Url="https://www.saucedemo.com/" Version="V3">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="52ab8a669a459c513b1d7ef1671e5e8f.jpg" xmlns="">0QccgOYb300WURrQ5NSepmg</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

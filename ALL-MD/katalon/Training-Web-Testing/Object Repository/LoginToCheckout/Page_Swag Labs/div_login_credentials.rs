@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_login_credentials</name>
+   <tag></tag>
+   <elementGuidId>e017fe5e-1191-4689-8cf3-e0ec2a89fc13</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>[data-test=&quot;login-credentials&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@data-test = 'login-credentials']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>6400d131-41ae-4116-9e5c-12d29ed53b72</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>login_credentials</value>
+      <webElementGuid>29b4ce30-a7ed-4eda-9584-031830105731</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>login_credentials</value>
+      <webElementGuid>55a8cd15-eceb-4db6-8580-6117d3e5017a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-test</name>
+      <type>Main</type>
+      <value>login-credentials</value>
+      <webElementGuid>e6900932-9d03-48bd-8d4f-e8f372d499eb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Accepted usernames are:standard_userlocked_out_userproblem_userperformance_glitch_usererror_uservisual_user</value>
+      <webElementGuid>bab1bc7a-3559-426f-875f-9874206489c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-bd1502bfe71ad096bad8af178512a401</value>
+      <webElementGuid>49fcf14c-f5a8-4182-9af4-aeff884103e0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@data-test = 'login-credentials']</value>
+      <webElementGuid>5544ff93-3b5f-47de-b639-fe5f6fb343a7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@data-test = 'login-credentials']</value>
+      <webElementGuid>50e16049-3894-4bd6-a3b0-fcdcbc942824</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[@id = 'login_credentials' and (text() = 'Accepted usernames are:standard_userlocked_out_userproblem_userperformance_glitch_usererror_uservisual_user' or . = 'Accepted usernames are:standard_userlocked_out_userproblem_userperformance_glitch_usererror_uservisual_user')]</value>
+      <webElementGuid>5787d109-99a8-4233-92d6-219f07c1db91</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

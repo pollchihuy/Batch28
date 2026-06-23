@@ -1,0 +1,6 @@
+{
+  "Name": "SauceDemoTesting",
+  "ProjectType": "Tests",
+  "Description": "Test Automation Project SauceDemo Testing",
+  "MainFile": "Main.xaml"
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="d7QS_6mG3UizOmkkDN02VQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="saucedemo.com" DesignTimeRectangle="1478, 1072, 876, 118" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" Guid="4d223f42-e512-441e-af58-40adbc8e2687" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="b560c29ccba76a72fbe6899d799d8442.jpg" xmlns="">0dEkl1HciYk-V_K2tHCOa0Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

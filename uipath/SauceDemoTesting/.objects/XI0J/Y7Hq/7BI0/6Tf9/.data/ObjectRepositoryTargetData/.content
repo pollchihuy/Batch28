@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="oiK8rgkSZk-4O16UV_bNUA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="saucedemo.com/inventory.html" DesignTimeRectangle="3693, 477, 60, 60" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='SPAN' /&gt;" Guid="5ede7c72-52e4-45ef-8bd1-4a635d669a16" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="233b0096cd733c8b051c4c65f8209fe8.jpg" xmlns="">0UmS2dvWBJUqECzNLfdzgMA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

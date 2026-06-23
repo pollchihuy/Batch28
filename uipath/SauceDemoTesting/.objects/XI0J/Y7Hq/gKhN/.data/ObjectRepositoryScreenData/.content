@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="09dLPajYe0GNp2daScUA6g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="1902, -18, 3876, 2196" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFrSURBVDhPddPNK0RRGMfxGUozOxaShY2kJkVio5mp+QvkJXuWhLUNO1tmVlKsZDcLGRt/AiILeZsrEVJEsfGSl+/vOqee7oynPt1z73me55577r0xH9mgUI91fOIn4gujLrV6kDCMN1cQdYOUS62MTLBYQ8KqKYgqZsr5OpdeGSS04MwUfOAS5wgwg1a0GY2Zi0LcNxiBinyDXbSjCd3u/B53xh4G/fJX4ItlPuxMMO7Hf3uzrwQt7dRcfEFOxelgIc54ycxF7ajBGOwdTpBGCj3YwDF0E5unVzurBpvmorzjAU9Yg/ahATk8wudpH3rVQEu2DbxvTIQbQTCeNHNSypbzSU3oI7ET3i3CjycT5BOMS2ZOpnznIWzjwDhEEX3owgD0Gn2xxp1hAwUnSehf8PTMy3jFszvqkXyDLZafcOWVQUIzjkxB1LRLrR4kDEJvo1rxNTpcavUgYQ7axCtDhfoexvmxav8yY7Ff4RnjWld/dTIAAAAASUVORK5CYII=" Selector="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" Url="https://www.saucedemo.com/inventory.html" Version="V3">
+      <imageRef attrName="InformativeScreenshot" originalValue="266e19f2b2c73c7d84c4e17765962776.jpg" xmlns="">0iinjZUnUxUmqqyWMo_j2gA</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

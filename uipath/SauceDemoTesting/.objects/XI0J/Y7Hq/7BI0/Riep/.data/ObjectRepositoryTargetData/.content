@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TwwQLKi8UUu-c77OlN7pyA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="saucedemo.com" DesignTimeRectangle="1508, 960, 816, 180" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" Guid="4d08581a-fb65-4c89-9798-fa87847f8147" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Swag Labs' /&gt;" SearchSteps="Selector" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="17affdbfe6089951ec064771f5c18bf9.jpg" xmlns="">0fiBPNHdGqEOxovGR2PdWuw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
